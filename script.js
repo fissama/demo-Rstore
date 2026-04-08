@@ -1,5 +1,5 @@
 /**
- * THE FACE SHOP Vietnam — Main Script
+ * THE FAKE SHOP Vietnam — Main Script
  * Vanilla JavaScript: cart, interactions, animations
  */
 
@@ -126,7 +126,7 @@ const PRODUCTS = [
   },
   {
     id: 10,
-    name: 'THE FACE SHOP K-Beauty Gift Set',
+    name: 'THE FAKE SHOP K-Beauty Gift Set',
     category: 'Makeup Set',
     description: '8-piece curated K-beauty set: cleanser, toner, serum, eye cream, moisturiser & more.',
     price: 148.00,
@@ -718,7 +718,7 @@ const BEST_SELLERS = [
   { id: 1,  rank: '#1', name: 'Rice Water Bright Cleansing Serum',     price: '$68',  image: 'assets/images/product-serum.jpg' },
   { id: 5,  rank: '#2', name: 'Rice Water Bright Cleansing Foam',      price: '$32',  image: 'assets/images/product-cleanser.jpg' },
   { id: 8,  rank: '#3', name: 'White Seed Brightening Vitamin C Cream',price: '$58',  image: 'assets/images/product-vitamin-c-cream.jpg' },
-  { id: 10, rank: '#4', name: 'THE FACE SHOP K-Beauty Gift Set',        price: '$99',  image: 'assets/images/product-makeup-set.jpg' },
+  { id: 10, rank: '#4', name: 'THE FAKE SHOP K-Beauty Gift Set',        price: '$99',  image: 'assets/images/product-makeup-set.jpg' },
 ];
 
 /* Categories */
@@ -757,14 +757,14 @@ const CATEGORIES = [
 /* Testimonials */
 const TESTIMONIALS = [
   {
-    text: `"THE FACE SHOP Rice Water Bright Cleansing Foam completely transformed my morning routine. My skin feels so clean and bright without being stripped. Everyone notices the difference!"`,
+    text: `"THE FAKE SHOP Rice Water Bright Cleansing Foam completely transformed my morning routine. My skin feels so clean and bright without being stripped. Everyone notices the difference!"`,
     name: 'Nguyễn Minh Châu',
     title: 'Skincare Enthusiast',
     avatar: 'assets/images/avatar-amelia.jpg',
     stars: 5,
   },
   {
-    text: `"I've tried many Korean beauty brands but THE FACE SHOP's Natural Sun Eco series is unbeatable. No white cast, super lightweight — I wear it every single day under my makeup."`,
+    text: `"I've tried many Korean beauty brands but THE FAKE SHOP's Natural Sun Eco series is unbeatable. No white cast, super lightweight — I wear it every single day under my makeup."`,
     name: 'Trần Hương Giang',
     title: 'Beauty Blogger',
     avatar: 'assets/images/avatar-sofia.jpg',
@@ -778,7 +778,7 @@ const TESTIMONIALS = [
     stars: 5,
   },
   {
-    text: '"I ordered the THE FACE SHOP gift set for my wife and she was absolutely blown away by the packaging and quality. Delivery was super fast and everything arrived perfectly. Will order again!"',
+    text: '"I ordered the THE FAKE SHOP gift set for my wife and she was absolutely blown away by the packaging and quality. Delivery was super fast and everything arrived perfectly. Will order again!"',
     name: 'Phạm Quốc Hùng',
     title: 'Verified Buyer',
     avatar: 'assets/images/avatar-marcus.jpg',
@@ -828,7 +828,7 @@ function ripple(btn, e) {
    ============================================================ */
 function loadCart() {
   try {
-    const saved = localStorage.getItem('tfs_faceshop_cart');
+    const saved = localStorage.getItem('tfs_fakeshop_cart');
     cart = saved ? JSON.parse(saved) : [];
   } catch (err) {
     console.warn('Cart data could not be parsed, resetting.', err);
@@ -837,7 +837,7 @@ function loadCart() {
 }
 
 function saveCart() {
-  localStorage.setItem('tfs_faceshop_cart', JSON.stringify(cart));
+  localStorage.setItem('tfs_fakeshop_cart', JSON.stringify(cart));
 }
 
 function addToCart(productId) {
@@ -1254,7 +1254,7 @@ function initNewsletter() {
     e.preventDefault();
     const input = form.querySelector('.newsletter-input');
     if (!input.value.trim()) return;
-    showToast('🎉 You\'re subscribed! Welcome to THE FACE SHOP Vietnam.');
+    showToast('🎉 You\'re subscribed! Welcome to THE FAKE SHOP Vietnam.');
     input.value = '';
   });
 }

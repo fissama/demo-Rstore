@@ -1,5 +1,5 @@
 /* ===================================================
-   THE FACE SHOP — Main Stylesheet
+   THE FAKE SHOP — Main Stylesheet
    Natural Beauty from Korea
    =================================================== */
 
@@ -11,7 +11,7 @@
 }
 
 :root {
-  --clr-primary:   #00904A;   /* THE FACE SHOP green */
+  --clr-primary:   #00904A;   /* THE FAKE SHOP green */
   --clr-primary-d: #006E38;   /* darker green */
   --clr-primary-l: #E8F5E9;   /* light green tint */
   --clr-dark:      #1B3D2E;   /* deep forest green */
