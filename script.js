@@ -1,5 +1,5 @@
 /**
- * The Fake Shop — Main Script
+ * THE FACE SHOP Vietnam — Main Script
  * Vanilla JavaScript: cart, interactions, animations
  */
 
@@ -9,9 +9,9 @@
 const PRODUCTS = [
   {
     id: 1,
-    name: 'Velvet Rose Hydrating Serum',
+    name: 'Rice Water Bright Cleansing Serum',
     category: 'Serum',
-    description: 'Infused with rose extract and hyaluronic acid for deep hydration and a radiant glow.',
+    description: 'Infused with rice water extract and hyaluronic acid for deep hydration and a radiant, brightened complexion.',
     price: 68.00,
     salePrice: null,
     rating: 4.9,
@@ -22,9 +22,9 @@ const PRODUCTS = [
   },
   {
     id: 2,
-    name: 'Luminous Silk Foundation',
+    name: 'Ink Lasting Foundation Slim Fit',
     category: 'Makeup',
-    description: 'Buildable, skin-like coverage with a satin finish. SPF 20. 36-shade range.',
+    description: 'Buildable, skin-like coverage with a satin finish. SPF 30. Long-lasting all-day wear formula.',
     price: 52.00,
     salePrice: 38.00,
     rating: 4.7,
@@ -35,9 +35,9 @@ const PRODUCTS = [
   },
   {
     id: 3,
-    name: 'Midnight Bloom Eye Palette',
+    name: 'My Palette My Eyes Shadow',
     category: 'Makeup',
-    description: '12 richly pigmented shades from nude to dramatic. Vegan & cruelty-free.',
+    description: '12 richly pigmented shades from nude to dramatic. Vegan & cruelty-free. Inspired by nature.',
     price: 44.00,
     salePrice: null,
     rating: 4.8,
@@ -48,9 +48,9 @@ const PRODUCTS = [
   },
   {
     id: 4,
-    name: 'Golden Hour Lip Gloss',
+    name: 'Lovely ME:EX Glossy Lip Gloss',
     category: 'Lipstick',
-    description: 'High-shine formula with vitamin E. Non-sticky, long-lasting lustre.',
+    description: 'High-shine formula with vitamin E. Non-sticky, long-lasting lustre in a range of natural shades.',
     price: 24.00,
     salePrice: 18.00,
     rating: 4.6,
@@ -61,9 +61,9 @@ const PRODUCTS = [
   },
   {
     id: 5,
-    name: 'Cloud Soft Cleanser',
+    name: 'Rice Water Bright Cleansing Foam',
     category: 'Cleanser',
-    description: 'Gentle micellar gel that removes makeup and impurities without stripping moisture.',
+    description: 'Gentle rice water foam that removes makeup and impurities without stripping moisture. 98% natural origin.',
     price: 32.00,
     salePrice: null,
     rating: 4.9,
@@ -74,9 +74,9 @@ const PRODUCTS = [
   },
   {
     id: 6,
-    name: 'Dew Shield SPF 50 Sunscreen',
+    name: 'Natural Sun Eco SPF50+ PA+++',
     category: 'Sunscreen',
-    description: 'Invisible, lightweight broad-spectrum protection with a dewy, skin-loving finish.',
+    description: 'Invisible, lightweight broad-spectrum protection with a dewy, skin-loving finish. No white cast.',
     price: 38.00,
     salePrice: null,
     rating: 4.8,
@@ -87,9 +87,9 @@ const PRODUCTS = [
   },
   {
     id: 7,
-    name: 'Satin Velvet Matte Lipstick',
+    name: 'Velvet Fit Girl Crush Lipstick',
     category: 'Lipstick',
-    description: 'Intense colour, creamy matte texture with 8-hour wear. No feathering.',
+    description: 'Intense colour, creamy matte texture with 8-hour wear. No feathering. 20 shades.',
     price: 28.00,
     salePrice: null,
     rating: 4.7,
@@ -100,9 +100,9 @@ const PRODUCTS = [
   },
   {
     id: 8,
-    name: 'Pearl Glow Vitamin C Cream',
+    name: 'White Seed Brightening Vitamin C Cream',
     category: 'Skincare',
-    description: 'Brightening day cream with 15% vitamin C complex and pearl extract.',
+    description: 'Brightening day cream with vitamin C complex and white seed extract. Fades dark spots visibly.',
     price: 74.00,
     salePrice: 58.00,
     rating: 4.9,
@@ -113,9 +113,9 @@ const PRODUCTS = [
   },
   {
     id: 9,
-    name: 'Rose Petal Toning Mist',
+    name: 'Chia Seed No Shine Hydrating Toner',
     category: 'Skincare',
-    description: 'Alcohol-free facial mist with real rose petals to refresh and tone skin anytime.',
+    description: 'Alcohol-free toner with real chia seed extract to refresh, tone and deeply hydrate skin anytime.',
     price: 26.00,
     salePrice: null,
     rating: 4.6,
@@ -126,9 +126,9 @@ const PRODUCTS = [
   },
   {
     id: 10,
-    name: 'Luxe Complete Makeup Set',
+    name: 'THE FACE SHOP K-Beauty Gift Set',
     category: 'Makeup Set',
-    description: '8-piece curated set: foundation, mascara, liner, blush, highlighter & more.',
+    description: '8-piece curated K-beauty set: cleanser, toner, serum, eye cream, moisturiser & more.',
     price: 148.00,
     salePrice: 99.00,
     rating: 4.9,
@@ -139,9 +139,9 @@ const PRODUCTS = [
   },
   {
     id: 11,
-    name: 'Charcoal Deep Pore Mask',
+    name: 'Jeju Volcanic Lava Pore Mask',
     category: 'Skincare',
-    description: 'Activated charcoal draws out impurities and tightens pores for a smoother complexion.',
+    description: 'Jeju volcanic ash draws out impurities and tightens pores for a smoother, shine-free complexion.',
     price: 34.00,
     salePrice: null,
     rating: 4.5,
@@ -152,9 +152,9 @@ const PRODUCTS = [
   },
   {
     id: 12,
-    name: 'Opal Highlight & Glow Powder',
+    name: 'Shimmer Highlighting Beam Powder',
     category: 'Makeup',
-    description: 'Finely milled opal-infused powder for a multi-dimensional, lit-from-within glow.',
+    description: 'Finely milled pearl-infused powder for a multi-dimensional, lit-from-within glow.',
     price: 42.00,
     salePrice: null,
     rating: 4.8,
@@ -715,10 +715,10 @@ const PRODUCTS = [
 
 /* Best Sellers (subset) */
 const BEST_SELLERS = [
-  { id: 1,  rank: '#1', name: 'Velvet Rose Hydrating Serum',  price: '$68',  image: 'assets/images/product-serum.jpg' },
-  { id: 5,  rank: '#2', name: 'Cloud Soft Cleanser',           price: '$32',  image: 'assets/images/product-cleanser.jpg' },
-  { id: 8,  rank: '#3', name: 'Pearl Glow Vitamin C Cream',    price: '$58',  image: 'assets/images/product-vitamin-c-cream.jpg' },
-  { id: 10, rank: '#4', name: 'Luxe Complete Makeup Set',      price: '$99',  image: 'assets/images/product-makeup-set.jpg' },
+  { id: 1,  rank: '#1', name: 'Rice Water Bright Cleansing Serum',     price: '$68',  image: 'assets/images/product-serum.jpg' },
+  { id: 5,  rank: '#2', name: 'Rice Water Bright Cleansing Foam',      price: '$32',  image: 'assets/images/product-cleanser.jpg' },
+  { id: 8,  rank: '#3', name: 'White Seed Brightening Vitamin C Cream',price: '$58',  image: 'assets/images/product-vitamin-c-cream.jpg' },
+  { id: 10, rank: '#4', name: 'THE FACE SHOP K-Beauty Gift Set',        price: '$99',  image: 'assets/images/product-makeup-set.jpg' },
 ];
 
 /* Categories */
@@ -757,29 +757,29 @@ const CATEGORIES = [
 /* Testimonials */
 const TESTIMONIALS = [
   {
-    text: `"The Velvet Rose Serum completely transformed my skin. I've tried so many luxury brands and nothing comes close to the glow this gives me. My friends keep asking what I'm doing differently!"`,
-    name: 'Amelia Chen',
+    text: `"THE FACE SHOP Rice Water Bright Cleansing Foam completely transformed my morning routine. My skin feels so clean and bright without being stripped. Everyone notices the difference!"`,
+    name: 'Nguyễn Minh Châu',
     title: 'Skincare Enthusiast',
     avatar: 'assets/images/avatar-amelia.jpg',
     stars: 5,
   },
   {
-    text: `"I was skeptical about buying makeup online but The Fake Shop's descriptions are spot on. The Luminous Silk Foundation matches my shade perfectly and lasts all day — no touch-ups needed."`,
-    name: 'Sofia Rossi',
+    text: `"I've tried many Korean beauty brands but THE FACE SHOP's Natural Sun Eco series is unbeatable. No white cast, super lightweight — I wear it every single day under my makeup."`,
+    name: 'Trần Hương Giang',
     title: 'Beauty Blogger',
     avatar: 'assets/images/avatar-sofia.jpg',
     stars: 5,
   },
   {
-    text: '"Dew Shield SPF50 is the only sunscreen I\'ve found that doesn\'t leave a white cast on my deeper skin tone. Lightweight, no stickiness, blends beautifully under makeup. A permanent staple."',
-    name: 'Priya Nair',
+    text: '"The Chia Seed Hydrating Toner is the best toner I have ever used. My combination skin is finally balanced and the texture is so smooth after just two weeks of use. A permanent staple!"',
+    name: 'Lê Phương Anh',
     title: 'Dermatology Nurse',
     avatar: 'assets/images/avatar-priya.jpg',
     stars: 5,
   },
   {
-    text: '"Ordered the Luxe Complete Makeup Set as a gift for my sister and she was blown away by the quality and presentation. Everything arrived beautifully packaged. Will definitely order again!"',
-    name: 'Marcus Owens',
+    text: '"I ordered the THE FACE SHOP gift set for my wife and she was absolutely blown away by the packaging and quality. Delivery was super fast and everything arrived perfectly. Will order again!"',
+    name: 'Phạm Quốc Hùng',
     title: 'Verified Buyer',
     avatar: 'assets/images/avatar-marcus.jpg',
     stars: 5,
@@ -828,7 +828,7 @@ function ripple(btn, e) {
    ============================================================ */
 function loadCart() {
   try {
-    const saved = localStorage.getItem('tfs_cart');
+    const saved = localStorage.getItem('tfs_faceshop_cart');
     cart = saved ? JSON.parse(saved) : [];
   } catch (err) {
     console.warn('Cart data could not be parsed, resetting.', err);
@@ -837,7 +837,7 @@ function loadCart() {
 }
 
 function saveCart() {
-  localStorage.setItem('tfs_cart', JSON.stringify(cart));
+  localStorage.setItem('tfs_faceshop_cart', JSON.stringify(cart));
 }
 
 function addToCart(productId) {
@@ -1254,7 +1254,7 @@ function initNewsletter() {
     e.preventDefault();
     const input = form.querySelector('.newsletter-input');
     if (!input.value.trim()) return;
-    showToast('🎉 You\'re subscribed! Welcome to The Fake Shop.');
+    showToast('🎉 You\'re subscribed! Welcome to THE FACE SHOP Vietnam.');
     input.value = '';
   });
 }
